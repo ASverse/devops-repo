@@ -155,6 +155,7 @@ hosting.
 
 ## Screenshots
 ![CICD CODE](CICD_Pipelinecode.png)
+![Trigger](trigger.png)
 ![manual trigger image](manualtrigger_image.png)
 ![auto trigger build](autotrigger_build.png)
 ![auto trigger image](autotrigger_image_artifact.png)
