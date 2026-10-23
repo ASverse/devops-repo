@@ -41,47 +41,22 @@ Cloud Build trigger runs
 Open the Cloud Run service URL
 ```
 
-## Key terms
+## Key Terms
 
-  -----------------------------------------------------------------------
-  Tool                                What it does in this project
-  ----------------------------------- -----------------------------------
-  **Git**                             Tracks code changes locally through
-                                      commits.
-
-  **GitHub**                          Hosts the repository and receives
-                                      pushes.
-
-  **Terminal / Cloud Shell**          Lets you run commands such as
-                                      `git`, `gh`, and `gcloud`. Cloud
-                                      Shell is a browser-based terminal
-                                      in Google Cloud Console.
-
-  **Dockerfile**                      Instructions for packaging the app
-                                      and its dependencies into an image.
-
-  **Docker image**                    The packaged application template
-                                      used to create a running container.
-
-  **Cloud Build**                     Builds the container image and
-                                      executes pipeline steps.
-
-  **Artifact Registry**               Stores the built image so Cloud Run
-                                      can retrieve it.
-
-  **Cloud Run**                       Runs the container without
-                                      requiring you to manage servers.
-
-  **Build trigger**                   Connects repository changes to an
-                                      automated build and deployment.
-
-  **`gcloud` CLI**                    Command-line tool for managing
-                                      Google Cloud resources.
-
-  **Terraform (optional)**            Can later define cloud resources as
-                                      code. It is not required for the
-                                      lab's basic pipeline.
-  -----------------------------------------------------------------------
+| Tool / Service | What it does in this project |
+|---|---|
+| Python Flask | Creates the web application. |
+| Git | Tracks code changes using commits. |
+| GitHub | Stores the source code repository. |
+| Terminal / Cloud Shell | Runs Git, GitHub CLI (`gh`), and Google Cloud CLI (`gcloud`) commands. |
+| Docker | Packages the application and its dependencies into a container image. |
+| Dockerfile | Defines the instructions for building the Docker image. |
+| Cloud Build | Builds Docker images and runs CI/CD pipeline steps. |
+| Artifact Registry | Stores Docker images so Cloud Run can access them. |
+| Cloud Run | Deploys and runs the application as a managed serverless service. |
+| Cloud Build Triggers | Automatically start builds and deployments when code changes are pushed to GitHub. |
+| `gcloud` CLI | Allows you to manage Google Cloud resources from the terminal. |
+| Terraform (Optional) | Defines and manages cloud infrastructure using code. It is not required for this project. |
 
 ## Project tasks
 
